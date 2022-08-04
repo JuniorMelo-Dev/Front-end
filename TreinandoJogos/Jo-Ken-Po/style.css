@@ -73,3 +73,56 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+h1 {
+    background-color: var(--pupler);
+    color: var(--white);
+    padding: 15px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.bloco {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.placar {
+    width: 200px;
+    height: 76px;
+    border: 2px solid var(--pupler);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.label {
+    border-radius: 10px;
+    width: 60px;
+    padding: 5px;
+    font-size: .8rem;
+    font-weight: 800;
+    color: var(--white);
+    text-align: center;
+    position: absolute;
+}
+
+.bg-green {
+    background-color: var(--green);
+    left: 15%;
+}
+
+.bg-red {
+    background-color: var(--red);
+    right: 15%;
+}
