@@ -6,7 +6,6 @@ Gostaria de compartilhar a criação desse meu portfólio para exposição dos m
 
 :up: Ajuda aí galera, me dando uns toques no que eu posso melhorar no meu aprendizado. Pra quem está começando agora vai ajudar muito...
 
-
 :one: Muita.. Lógica de Programação
 
 :two: HTML5 e CSS3
@@ -16,7 +15,6 @@ Gostaria de compartilhar a criação desse meu portfólio para exposição dos m
 :four: Git e GitHub
 
 :five: Youtube
-
 
 ### Me segue lá nas Redes Sociais
 
