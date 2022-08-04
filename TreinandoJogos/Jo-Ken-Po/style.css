@@ -63,6 +63,10 @@ body {
     text-transform: uppercase;
 }
 
+.end-screen span {
+    font-size: 3rem;
+}
+
 .center {
     display: flex;
     flex-direction: column;
