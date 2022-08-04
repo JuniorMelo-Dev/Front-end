@@ -126,3 +126,22 @@ h1 {
     background-color: var(--red);
     right: 15%;
 }
+
+.bg-grey {
+    background-color: var(--grey);
+    height: 180px;
+}
+
+.selected-image div{
+    width: 50%;
+    min-height: 80px;
+    text-align: center;
+}
+
+.selected-image div img {
+    max-width: 80%;
+}
+
+.reverse {
+    transform: scaleX(-1); /* espelhamento da imagem */
+}
