@@ -40,6 +40,7 @@ function playPc() {
 function analyze() {
 
       playing.disabled = true
+      
       let win = "0"
 
       /* 
