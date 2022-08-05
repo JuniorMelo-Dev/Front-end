@@ -22,9 +22,27 @@
                 <div id="user">
                     <img src="assets/images/pedra.png" alt="rock">
                 </div>
-                <div id="pc" class="reverse">
-                    <img src="assets/images/pedra.png" alt="rock">
-                </div>
+                <div id="pc" class="reverse"></div>
+            </div>
+            <h2>Escolha seu movimento!!</h2>
+            <div class="buttons">
+                <label>
+                    <input type="radio" onclick="reset()" name="play" value="pedra" checked>
+                    <button class="btn">
+                        <img src="assets/images/pedra.png" alt="pedra">
+                    </button>
+                </label>
+                <label>
+                    <input type="radio" onclick="reset()" name="play" value="papel">
+                    <button class="btn"><img src="assets/images/papel.png" alt="papel"></button>
+                </label>
+                <label>
+                    <input type="radio" onclick="reset()" name="play" value="tesoura">
+                    <button class="btn"><img src="assets/images/tesoura.png" alt="tesoura"></button>
+                </label>
+            </div>
+            <div class="bloco">
+                <button id="playing" class="btn-play">Jogar</button>
             </div>
         </div>
 
