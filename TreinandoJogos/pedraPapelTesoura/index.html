@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+      <title>Pedra, Papel e Tesoura</title>
+
+      <style>
+            *{
+                  font-family: Helvetica;
+                  font-weight: 400;
+            }
+
+            #placar {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+            }
+
+            #jogador, #computador {
+                  position: relative;
+                  flex-grow: 1;
+                  border-radius: 5px;
+                  width: 200px;
+                  padding: 20px;
+                  color: #fff;
+            }
+
+            #jogador {
+                  background-color: #ff7675;
+            }
+            #computador {
+                  background-color: #74b9ff;
+            }
+
+            ul#jogador-escolha, ul#computador-escolha {
+                  list-style: none;
+                  margin: 0;
+                  padding: 0;
+                  text-align: center;
+            }
+
+            ul#jogador-escolha li, ul#computador-escolha li {
+                  display: inline;
+            }
+
+            ul#jogador-escolha li a, ul#computador-escolha li a {
+                 opacity: .2; 
+            }
+            ul#jogador-escolha li a:hover {
+                  opacity: 1;
+            }
+
+            ul#jogador-escolha li a img, ul#computador-escolha li a img {
+                  max-width: 80px;
+            }
+      </style>
+
+</head>
+<body>
+      <div id="principal">
+            <h1 id="titulo">Pedra, Papel e Tesoura</h1>
+            <div id="placar">
+                  <div id="jogador">
+                        <h2 id="jogador-nome">Junior</h2>
+                        <span id="jogador-pontos">0</span>
+
+                        <ul id="jogador-escolha">
+                              <li><a id="jogador-escolha1"><img src="img/pedra.png" alt="imagem-papel"></a></li>
+                              <li><a id="jogador-escolha2"><img src="img/papel.png" alt="imagem-pedra"></a></li>
+                              <li><a id="jogador-escolha3"><img src="img/tesoura.png" alt="imagem-tesoura"></a></li>
+                        </ul>
+                  </div>
+
+                  <div id="versus">vs</div>
+
+                  <div id="computador">
+                        <h2 id="computador-nome">Computador</h2>
+                        <span id="computador-pontos">0</span>
+
+                        <ul id="computador-escolha">
+                              <li><a id="computador-escolha1"><img src="img/pedra.png" alt="imagem-papel"></a></li>
+                              <li><a id="computador-escolha2"><img src="img/papel.png" alt="imagem-pedra"></a></li>
+                              <li><a id="computador-escolha3"><img src="img/tesoura.png" alt="imagem-tesoura"></a></li>
+                        </ul>
+                  </div>
+
+            </div>
+      </div>
+</body>
+</html>
