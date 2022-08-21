@@ -13,6 +13,11 @@
                   font-weight: 400;
             }
 
+            #titulo {
+                  color: #0984e3;
+                  text-align: center;
+            }
+
             #placar {
                   display: flex;
                   align-items: center;
@@ -35,6 +40,33 @@
                   background-color: #74b9ff;
             }
 
+            #versus {
+                  font-size: 40px;
+                  text-align: center;
+                  width: 70px;
+            }
+
+            #jogador-nome, #computador-nome {
+                  margin: 0;
+                  padding: 0;
+            }
+            #jogador-nome {
+                  text-align: left;
+            }
+            #computador-nome {
+                  text-align: right;
+            }
+
+            #jogador-pontos, #computador-pontos {
+                  position: absolute;
+                  top: 8px;
+                  font-size: 32px;
+            }
+
+            #jogador-pontos {
+                  right: 20px;
+            }
+
             ul#jogador-escolha, ul#computador-escolha {
                   list-style: none;
                   margin: 0;
@@ -55,6 +87,14 @@
 
             ul#jogador-escolha li a img, ul#computador-escolha li a img {
                   max-width: 80px;
+            }
+
+            #mensagens {
+                  background-color: #b2bec3;
+                  border-radius: 5px;
+                  font-size: 32px;
+                  margin: 40px 0;
+                  padding: 20px;
             }
       </style>
 
@@ -88,6 +128,8 @@
                   </div>
 
             </div>
+
+            <div id="mensagens">Mensagens: </div>
       </div>
 </body>
 </html>
