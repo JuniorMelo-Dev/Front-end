@@ -5,98 +5,8 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="style.css">
       <title>Pedra, Papel e Tesoura</title>
-
-      <style>
-            *{
-                  font-family: Helvetica;
-                  font-weight: 400;
-            }
-
-            #titulo {
-                  color: #0984e3;
-                  text-align: center;
-            }
-
-            #placar {
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-            }
-
-            #jogador, #computador {
-                  position: relative;
-                  flex-grow: 1;
-                  border-radius: 5px;
-                  width: 200px;
-                  padding: 20px;
-                  color: #fff;
-            }
-
-            #jogador {
-                  background-color: #ff7675;
-            }
-            #computador {
-                  background-color: #74b9ff;
-            }
-
-            #versus {
-                  font-size: 40px;
-                  text-align: center;
-                  width: 70px;
-            }
-
-            #jogador-nome, #computador-nome {
-                  margin: 0;
-                  padding: 0;
-            }
-            #jogador-nome {
-                  text-align: left;
-            }
-            #computador-nome {
-                  text-align: right;
-            }
-
-            #jogador-pontos, #computador-pontos {
-                  position: absolute;
-                  top: 8px;
-                  font-size: 32px;
-            }
-
-            #jogador-pontos {
-                  right: 20px;
-            }
-
-            ul#jogador-escolha, ul#computador-escolha {
-                  list-style: none;
-                  margin: 0;
-                  padding: 0;
-                  text-align: center;
-            }
-
-            ul#jogador-escolha li, ul#computador-escolha li {
-                  display: inline;
-            }
-
-            ul#jogador-escolha li a, ul#computador-escolha li a {
-                 opacity: .2; 
-            }
-            ul#jogador-escolha li a:hover {
-                  opacity: 1;
-            }
-
-            ul#jogador-escolha li a img, ul#computador-escolha li a img {
-                  max-width: 80px;
-            }
-
-            #mensagens {
-                  background-color: #b2bec3;
-                  border-radius: 5px;
-                  font-size: 32px;
-                  margin: 40px 0;
-                  padding: 20px;
-            }
-      </style>
 
 </head>
 <body>
@@ -108,9 +18,9 @@
                         <span id="jogador-pontos">0</span>
 
                         <ul id="jogador-escolha">
-                              <li><a id="jogador-escolha1"><img src="img/pedra.png" alt="imagem-papel"></a></li>
-                              <li><a id="jogador-escolha2"><img src="img/papel.png" alt="imagem-pedra"></a></li>
-                              <li><a id="jogador-escolha3"><img src="img/tesoura.png" alt="imagem-tesoura"></a></li>
+                              <li><a id="jogador-escolha1" onclick="jogar(1)"><img src="img/pedra.png" alt="imagem-papel"></a></li>
+                              <li><a id="jogador-escolha2" onclick="jogar(2)"><img src="img/papel.png" alt="imagem-pedra"></a></li>
+                              <li><a id="jogador-escolha3" onclick="jogar(3)"><img src="img/tesoura.png" alt="imagem-tesoura"></a></li>
                         </ul>
                   </div>
 
@@ -129,7 +39,9 @@
 
             </div>
 
-            <div id="mensagens">Mensagens: </div>
+            <div id="mensagens">&nbsp;</div>
       </div>
+
+      <script src="script.js"></script>
 </body>
 </html>
