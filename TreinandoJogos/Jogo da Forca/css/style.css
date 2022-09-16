@@ -1,12 +1,39 @@
+@import url('https://fonts.googleapis.com/css2? família=Ubuntu:wght@300;400;500&display=swap');
+
 * {
       padding: 0;
       margin: 0;
       box-sizing: border-box;
 }
 
+body {
+      width: 100vw;
+      height: 90vh;
+      margin-top: 10px;
+      background-color: goldenrod;
+      font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+}
+
 #imagem {
-      background-image: url("../img/forca06.png");
+      background-image: url("../img/forca.png");
       width: 234px;
       height: 272px;
       background-repeat: no-repeat;
+}
+
+#palavra-secreta {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 1em;
+      margin-top: 30px;
 }
