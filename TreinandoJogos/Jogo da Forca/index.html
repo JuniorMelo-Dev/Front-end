@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="shortcut icon" href="/TreinandoJogos/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" href="./css/style.css" media="screen">
       <title>Jogo da Forca</title>
 </head>
@@ -27,6 +28,9 @@
             <div id="teclado">
                   <div class="teclas">
                         <button id="tecla-A" onclick="verificarLetra('A')">A</button>
+
+                        <!-- <button id="tecla-A" onclick="verificaLetraEscolhida('A')">A</button> -->
+
                         <button id="tecla-B" onclick="verificarLetra('B')">B</button>
                         <button id="tecla-C" onclick="verificarLetra('C')">C</button>
                         <button id="tecla-D" onclick="verificarLetra('D')">D</button>
@@ -56,17 +60,35 @@
                         <button id="tecla-X" onclick="verificarLetra('X')">X</button>
                         <button id="tecla-Y" onclick="verificarLetra('Y')">Y</button>
                         <button id="tecla-Z" onclick="verificarLetra('Z')">Z</button>
-                        <button id="btn-reiniciar">🕹️</button>
+                        <button id="btnReiniciar">🕹️</button>
                   </div>
             </div>
 
             <div id="categoria"></div>
 
             <!-- Início Modal -->
-
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                      </div>
+                      <div class="modal-body" id="modalBody"></div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
             <!-- Fim Modal -->
 
             <script src="./js/main.js"></script>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       </div>
 </body>
 </html>
