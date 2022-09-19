@@ -281,13 +281,27 @@ function montarPalavraTela() {
 }
 
 function verificarLetra(letra) {
-      if(tentativas > 0) {
-            mudarStyleLetra("tecla-" + letra);
-      }
+    if(tentativas > 0) {
+        mudarStyleLetra("tecla-" + letra);
+        compararListas(letra);
+    }
 }
 
 function mudarStyleLetra(tecla) {
-      document.getElementById(tecla).style.background = "#C71585";
-      document.getElementById(tecla).style.color = "#ffffff";
+    document.getElementById(tecla).style.background = "#C71585";
+    document.getElementById(tecla).style.color = "#ffffff";
       
+}
+
+function compararListas(letra) {
+    const posicao = palavraSecretaSorteada.indexOf(letra)
+    if (posicao < 0) {
+        tentativas --
+    }else {
+        for (i = 0; i < palavraSecretaSorteada.lenght; i ++) {
+            if (palavraSecretaSorteada[i] == letra) {
+                listaDinamica[i] = letra;
+            }
+        }
+    }
 }
