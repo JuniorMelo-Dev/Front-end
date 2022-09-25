@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Introdução JS</title>
+</head>
+<body>      
+<!-- Método getElementById() Js. -->
+<h1>O que o JavaScript pode fazer?</h1>
+
+<h2 id="demo">JavaScript pode alterar o conteúdo HTML.</h2>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript Here"'>Alter Content 1</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript Again"'>Alter Content 2</button>
+
+
+<h3 id="demo2">JavaScript pode alterar o estilo de um elemento HTML.</h3>
+<button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">Alter Style 1</button>
+<button type="button" onclick="document.getElementById('demo2').style.fontSize='19px'">Alter Style 2</button>
+
+<h3>JavaScript pode ocultar e mostrar elementos HTML</h3>
+<p id="demo3">Ocultar/Mostrar Elemento HTML.</p>
+<button type="button" onclick="document.getElementById('demo3').style.display='none'">Hider Content!</button>
+<button type="button" onclick="document.getElementById('demo3').style.display='block'">Show Hidden Content!</button>
+
+<!-- Alterando atributo src. -->
+<h3>Neste caso JavaScript pode alterar o valor do atributo src(source) de uma imagem.</h3>
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/html/pic_bulbon.gif'">Acenda a luz!</button>
+
+<img id="myImage" src="https://www.w3schools.com/html/pic_bulboff.gif" alt="gif_lampada" >
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/html/pic_bulboff.gif'">Desligue a luz!</button>
+
+</body>
+</html>
