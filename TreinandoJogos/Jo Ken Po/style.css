@@ -84,7 +84,7 @@ h1 {
     border-top-right-radius: 10px;
 }
 
-.bloco {
+.bloco, .url {
     width: 100%;
     padding: 20px 0;
     display: flex;
