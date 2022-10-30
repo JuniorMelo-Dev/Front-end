@@ -12,9 +12,11 @@ Gostaria de compartilhar a criação desse meu portfólio para exposição dos m
 
 :three: Javascript
 
-:four: Git e GitHub
+:four: ReactJs
 
-:five: Youtube
+:five: Git e GitHub
+
+:six: Youtube
 
 ### Me segue lá nas Redes Sociais
 
